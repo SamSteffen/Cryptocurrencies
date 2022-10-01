@@ -29,13 +29,17 @@ Using the K-means algorithm, we created an elbow curve using hvPlot to find the 
 ### Visualizing the Distinct Cryptocurrencies
 Using scatter plots with Plotly Express and hvplot, we visualized the distinct groups that corresponded to the three principal components created in Step 2, then created a table with all the currently tradable cryptocurrencies using the hvplot.table() function.
 
+The image below shows a 3-D model of our PCA data.
+
 ![PCA_analysis_3d_plot](https://user-images.githubusercontent.com/104729703/193395083-674168e0-585f-4185-b20e-38326bd707ca.png)
 
+Below is the table featuring all the currently tradable cryptocurrencies from our dataset.
 
 <img width="593" alt="Tradable_cryptocurrencies_table" src="https://user-images.githubusercontent.com/104729703/193395210-5137de49-c83a-41be-92c4-85b47978f450.png">
 
+Below is a scatterplot of the data, rescaled using the MinMaxScaler() and fit_transform() methods to express values between 0 and 1.
 
 <img width="551" alt="MinMaxScaled_Crypto_scatterplot" src="https://user-images.githubusercontent.com/104729703/193395181-de0f5d5b-9366-4d25-af31-d97bc4e5c413.png">
 
 ## Summary
-Our analysis showed that 533 distinct cryptocurrencies were found in our dataset that met the criteria for usable data. Of those, 35 are currently depleted.
+Our analysis showed that 533 distinct cryptocurrencies were found in our dataset that met the criteria for usable data. Of those, 35 are currently depleted. This should provide our client with a good starting place for knowing about what cryptocurrencies are available. For further analysis, it might be interesting to investigate rates of growth in the value and exchange rate for each of the cryptocurrencies, but more data would be needed to accomplish this.
